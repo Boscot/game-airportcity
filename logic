@@ -1,0 +1,24 @@
+<?php
+
+#require_once __DIR__."/lib.php";
+/*
+function logg($text) {
+ $log = fopen("cheats.log","a+");
+ $text = date("[Y-m-d H:i:s] ").$text;
+ fwrite($log,"$text\n");
+ fclose($log);
+}
+*/
+#logg("From:[82.235.140.109] -> 1 000 000 coins + 1 000 000 billets");
+#$dir = "game_data";
+#$time = time();
+#file_put_contents("$dir/$time.post.txt",print_r($_POST,1));
+#file_put_contents("$dir/$time.get.txt",print_r($_GET,1));
+#file_put_contents("$dir/$time.post.json",json_encode($_POST));
+#file_put_contents("$dir/$time.get.json",json_encode($_GET));
+if ($_GET["cmd"] == "promo_friend.get_reward") {
+?>
+status=100;money_game=10000;money_real=100
+
+<?
+}

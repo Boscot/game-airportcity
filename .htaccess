@@ -1,0 +1,11 @@
+ErrorDocument 404 /error404.php
+
+<FilesMatch "logic*">
+ForceType application/x-httpd-php
+</FilesMatch>
+<FilesMatch ".*">
+ForceType application/x-httpd-php
+</FilesMatch>
+<FilesMatch ".txt">
+ForceType text/plain
+</FilesMatch>
